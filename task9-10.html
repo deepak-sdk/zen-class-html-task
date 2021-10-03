@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    .input-form {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .input {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .input input,
+    .input select {
+        padding: 5px;
+        margin: 5px;
+    }
+
+
+
+    .input label {
+        padding: 5px;
+        margin: 5px;
+        font-weight: 700;
+    }
+
+    .input-btn {
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+    }
+
+    button {
+        padding: 5px 10px;
+        margin: 10px;
+    }
+</style>
+
+<body>
+
+    <!-- Write HTML input tags snippet to show default values for all Form elements. -->
+
+
+    <h2>Task-9</h2>
+
+    <section>
+        <article>
+            <form action="">
+                <fieldset style="width: fit-content;">
+                    <legend>Registration</legend>
+                    <div class="input-form">
+                        <div class="input">
+                            <label for="Fname">Name :</label>
+                            <input type="text" name="fullname" id="Fname" placeholder="Enter your Name" required>
+                        </div>
+                        <div class="input ">
+                            <label for="comfirm-password">Create Password :</label>
+                            <input type="password" name="password" id="comfirm-password"
+                                placeholder="Enter the Password" required>
+                        </div>
+                        <div class="input">
+                            <label for="password">Confirm Password :</label>
+                            <input type="password" name="password" id="password" placeholder="Confirm Password"
+                                required>
+                        </div>
+                        <div class="input">
+                            <label for="branch">Choose the branch :</label>
+                            <select name="bank-branches" id="branch" name="branch">
+                                <option value="">Adyar</option>
+                                <option value="">Velachery</option>
+                                <option value="" selected>Guidy</option>
+                                <option value="">Vadapalani</option>
+                                <option value="">CMBT</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-btn">
+                            <button value="submit">Register</button>
+                        </div>
+                    </div>
+                </fieldset>
+
+            </form>
+
+            <!-- In your, HTML page add the below line and Highlight it without using any CSS.
+                                    "HTML & CSS is awesome"-->
+
+            <div>
+                <h2>Task-10</h2>
+               <strong><i>"HTML & CSS is awesome"</i></strong>
+              
+            </div>
+            <br /><br />
+            <div>
+                <a href="./task11.html">Click here to see task 11</a><br/>
+                <a href="./task8.html">Go Back</a>
+            </div>
+
+
+        </article>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--11. Create an HTML page, which should contain all types of input elements. -->
+
+    <h2>Task 11</h2>
+    <section>
+        <article>
+            <div>
+                <form action="">
+                    <fieldset style="width: fit-content;">
+                        <legend>All Input Elements</legend>
+                        <div>
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="fname" id="firstname" placeholder="Firstname" required>
+                        </div>
+                        <div>
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="lname" id="lastname" placeholder="Lastname" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div>
+                            <label for="start">Birthday</label>
+                            <input type="date" id="start" name="trip-start" required>
+                        </div>
+                        <!-- Radio and CheckBox -->
+                        <div><label for="male">Male</label>
+                            <input type="radio" name="gender" value="male" checked id="male">
+
+                            <label for="female">Female</label>
+                            <input type="radio" name="gender" value="female" id="female">
+                        </div>
+                        <div class="input">
+                            <label for="branch">Select the work</label>
+                            <select name="bank-branches" id="branch" name="branch">
+                                <option value="">Full-stack Developer</option>
+                                <option value="">Front-end Developer</option>
+                                <option value="" selected>Back-end Developer</option>
+                                <option value="">UI/UX Designer</option>
+                                <option value="">OTHERS</option>
+                            </select>
+                        </div>
+                        <div>
+                            <h4>Interested Topics</h4>
+                            <div>
+                                <input type="checkbox" name="hobbies" value="gaming" id="gaming">
+                                <label for="gaming">Gaming</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="hobbies" value="cricket" id="cricket">
+                                <label for="cricket">Web Development</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="hobbies" value="sky-driving" id="sky-driving">
+                                <label for="sky-driving">Full Stack</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="hobbies" value="movies" id="movies">
+                                <label for="movies">Movies</label>
+                            </div>
+                        </div>
+
+                        <div class="Rating">
+                            <label for="points" class="Rating-label" for="volume">Points from 0 to 10</label>
+
+                            <input class="Rating-input" type="range" name="rating" min="0" max="10"
+                                onchange="updateText(this.value)" />
+                            <input type="number" id="rating">
+                        </div><br />
+
+                        <div>
+                            <button value="submit">Submit</button>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+            </div>
+        </article>
+    </section>
+    <br /><br />
+
+    <script>
+        function updateText(val) {
+            document.getElementById("rating").value = val;
+        }
+    </script>
+    <div>
+        <a href="./task9-10.html">Go Back</a><br />
+        <a href="./index.html">Go to page 1</a>
+    </div>
+
+</body>
+
+</html>
